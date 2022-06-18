@@ -16,3 +16,8 @@
   from = "/speaking"
   to = "/"
   status = 301
+
+  [[redirects]]
+  from = "/posts/*"
+  to = "/blog/:splat"
+  status = 301

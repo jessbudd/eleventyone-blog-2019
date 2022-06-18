@@ -75,7 +75,7 @@ body {
   white-space: nowrap;
   font-family: Menlo, Consolas, Monaco, monospace;
   padding: 6px 12px;
-  /* background-color: #cec2ef; */
+  text-transform: lowercase;
   border-radius: 4px;
   border: 1px solid #01ffd2;
 }
@@ -249,6 +249,7 @@ a:focus {
 
   a:link,
   a:visited {
+    text-transform: lowercase;
     display: inline-block;
     border-top-style: solid;
     border-top-width: 1px;
@@ -285,11 +286,11 @@ a:focus {
 
 .note {
   color: $heading-color;
-  font-size: .875rem;
+  font-size: 0.875rem;
   margin-left: 2rem;
   border-left: 3px solid $heading-color;
   padding-left: 1rem;
-  
+
   span {
     font-size: 1rem;
   }
