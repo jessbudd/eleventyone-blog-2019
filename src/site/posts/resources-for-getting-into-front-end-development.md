@@ -18,7 +18,7 @@ Of course I'm no expert, and the below recommendations are only based on my pers
   CodeCademy is a good first place to dip your toe in. It won't teach you how to think like a developer or build anything from scratch, but it will give you a taste of syntax, how different front-end languages are used together and if coding is something you want to get into further. They have freemium courses on [HTML](https://www.codecademy.com/learn/learn-html), [CSS](https://www.codecademy.com/learn/learn-css), [JavaScript](https://www.codecademy.com/learn/introduction-to-javascript) worth checking out.
 
 - [Practical Javascript](https://watchandcode.com/p/practical-javascript) <br/>
-  This is an excellent video-based course to help you understand fundamental programming concepts you may already have a surface-level understanding of. It took me from _kind of_ understanding arrays, objects, loops, events to being able to conceptualise and explain them to others.
+  This is an excellent video-based course to help you understand fundamental programming concepts. You can be 100% complete beginner, or you may even have surface-level understanding of programming concepts already. It took me from _kind of_ understanding arrays, objects, loops, events to being able to conceptualise and explain them to others.
 
 - [FreeCodeCamp](https://www.freecodecamp.org/learn) <br/>
   FreeCodeCamp's text-based curriculum is well thought out and takes you from start to finish of basic front-end development skills with [Responsive Web Design](https://www.freecodecamp.org/learn/responsive-web-design/) and [JavaScript Algorithihms and Data Structure](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/) certifications.
