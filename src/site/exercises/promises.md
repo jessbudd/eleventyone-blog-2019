@@ -15,7 +15,7 @@ draft: true
 {%- if subtitle %}<p class='subtitle'>{{ subtitle | safe }}</p>{% endif %}
 
 <script>
-function makePizza(toppings) {
+function makePizza(toppings = []) {
     return new Promise(function(resolve, reject) {
         // wait 1 second for the pizza to cook
         setTimeout(function() {

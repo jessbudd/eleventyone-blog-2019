@@ -1,3 +1,7 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "workbench.colorTheme": "Monokai",
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#ff1436" // 
+    }
 }
