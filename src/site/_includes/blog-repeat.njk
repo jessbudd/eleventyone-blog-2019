@@ -6,7 +6,7 @@
  
 <div class="archive__links">
 <a href="{{ post.url }}" aria-label="Read more about {{ post.data.title | lower }}" class="archive__read-more">Read more</a>
-<div class="archive__links-tags">{% if title === "Blog" %}{% for i in post.data.tags %} <span class="post__tag"><a href="/blog/{{ i }}">{{ i }}</a></span> {% endfor %}{% endif %}
+<div class="archive__links-tags">{% if title === "Blog" %}{% for i in post.data.tags %} <span class="post__tag"><a href="/category/{{ i }}">{{ i }}</a></span> {% endfor %}{% endif %}
 </div>
 </div>
 </li>

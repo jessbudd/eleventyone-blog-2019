@@ -1,13 +1,16 @@
 
-{# <header> #}
-<nav>
-  <ul class="nav">
-    <li>
-      <a href="/">home</a>
-    </li>
-        <li>
-      <a href="/posts">blog</a>
-    </li>
-  </ul>
-</nav>
-{# </header> #}
+<header>
+  <nav>
+    <ul class="nav">
+
+    {% for link in primaryNavLinks %}
+      <li>
+
+    <a href="{{ link.href }}">
+      {{ link.text }}
+    </a>
+    {% endfor %}
+    </ul>
+
+  </nav>
+</header>
