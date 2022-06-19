@@ -90,7 +90,8 @@ body {
   justify-content: space-between;
   margin-top: 40px;
 }
-.twitter a[href^="https://twitter"]
+.twitter a[href^="https://twitter"],
+a[href^="https://twitter"].twitter
 {
   font-weight: bold;
   color: $accent-color;
@@ -249,7 +250,6 @@ a:focus {
 
   a:link,
   a:visited {
-    text-transform: lowercase;
     display: inline-block;
     border-top-style: solid;
     border-top-width: 1px;
@@ -263,7 +263,8 @@ a:focus {
     text-align: left;
     color: mix($text-color, $accent-color, 80%);
     text-decoration: none;
-    @media (min-width: $mid) {
+    text-transform: lowercase;
+    å @media (min-width: $mid) {
       width: 6em;
     }
     @media (min-width: $wide) {
@@ -632,8 +633,13 @@ svg {
   font-style: normal;
 }
 .container__blog figure {
-  margin-left: -100px;
-  margin-right: -100px;
+  margin-left: -25px;
+  margin-right: -25px;
+
+  @media (min-width: $desk) {
+    margin-left: -100px;
+    margin-right: -100px;
+  }
 }
 figure {
   border: 1px solid #cec2ef;
