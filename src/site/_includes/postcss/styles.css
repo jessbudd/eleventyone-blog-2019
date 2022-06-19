@@ -85,6 +85,9 @@ body {
   color: #01ffd2;
   border-bottom: none;
 }
+.post__tag-list {
+  margin: 1.5rem 0 0.5rem;
+}
 .archive__links {
   display: flex;
   justify-content: space-between;
@@ -285,11 +288,19 @@ a:focus {
   }
 }
 
-.note {
+.warning--lg {
+  color: $heading-color;
+  font-size: 1rem;
+  margin: 2rem 3rem;
+  border: 1px solid $heading-color;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+.warning--sml {
+  border-left: 3px solid $heading-color;
   color: $heading-color;
   font-size: 0.875rem;
   margin-left: 2rem;
-  border-left: 3px solid $heading-color;
   padding-left: 1rem;
 
   span {
@@ -636,7 +647,7 @@ svg {
   margin-left: -25px;
   margin-right: -25px;
 
-  @media (min-width: $desk) {
+  @media (min-width: 960px) {
     margin-left: -100px;
     margin-right: -100px;
   }

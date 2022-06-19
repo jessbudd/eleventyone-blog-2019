@@ -9,6 +9,7 @@ tags: [post, life, speaking]
 ---
 
 <div class="twitter">
+
 <p class="subtitle">Three and a half months ago, I decided to give some public speaking a go. Today, I have 3 conference talks lined up. How did this happen??</p>
 
 You could say it actually all started nearly 2 years ago, when I was fortunate enough to be gifted a free ticket to attend [CSSConfAU](https://2018.cssconf.com.au). I managed to use frequent flyer points (accumulated from years of grocery shopping to pay for flights), and split the cost of an Airbnb with two friends also attending from Perth.
