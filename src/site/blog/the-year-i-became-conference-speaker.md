@@ -62,7 +62,7 @@ I needed to at least put my hat in the ring, right??
 
 ## Call in the troops
 
-This is when I enlisted my dream team ([@Mandy_Kerr](https://twitter.com/Mandy_Kerr), [@Amys_Kapers](https://twitter.com/Amys_Kapers), [@stringy](https://twitter.com/stringy) and [@sandysandy](https://twitter.com/sandysandy)) to help me figure out how to make this whole CFP thing happen.
+This is when I enlisted my dream team ({% twitter "Mandy_Kerr" %}, {% twitter "Amys_Kapers" %}, {% twitter "stringy" %}, {% twitter "sandysandy" %}) to help me figure out how to make this whole CFP thing happen.
 
 We organised a hacksesh and Mandy helped me brainstorm potential ideas using questions similar to the ones found in [this post by Lucy Bain](https://lucybain.com/blog/2016/conference-proposal-ideas/).
 
