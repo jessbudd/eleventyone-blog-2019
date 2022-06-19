@@ -28,6 +28,9 @@ module.exports = function (config) {
   config.addShortcode('twitter', function (twitterUsername) {
     return `<a class="twitter" href="https://twitter.com/${twitterUsername}">@${twitterUsername}</a>`;
   });
+  config.addShortcode('user', function (name) {
+    return `<div class="user">test${name}</div>`;
+  });
 
   // add support for syntax highlighting
   config.addPlugin(syntaxHighlight);
