@@ -41,13 +41,17 @@
       <article id="main" class="container__blog">
         <h1>{{ title }}</h1>
         {%- if subtitle %}<p class="subtitle">{{ subtitle | safe }}</p>{% endif %}
+
+        <div class="post__tag-list">{% for i in tags %} <span class="post__tag"><a href="/category/{{ i }}" >tag: {{ i }}</a></span> {% endfor %}</div>
+
+        {% oldContentWarning page.date %}
   
-        <p class="date">
-          Posted <time datetime="{{ date }}">{{ date | dateDisplay }}</time>
-        </p>
-        <p>{% for i in tags %} <span class="post__tag"><a href="/{{ i }}" >tag: {{ i }}</a></span> {% endfor %}</p>
+        <div class="date">
+          Posted <time datetime="{{ date }}">{{ date | dateDisplay }}</time></div>
 
         {{ content | safe }}
+
+        {% include "blog-bio.njk" %}
 
         {% include "footer.njk" %}
 

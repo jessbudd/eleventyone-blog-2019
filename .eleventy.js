@@ -25,9 +25,14 @@ module.exports = function (config) {
   config.addFilter('dateDisplay', require('./src/utils/filters/date.js'));
 
   // Shortcodes
-  config.addShortcode('twitter', function (twitterUsername) {
-    return `<a class="twitter" href="https://twitter.com/${twitterUsername}">@${twitterUsername}</a>`;
-  });
+  config.addShortcode(
+    'twitter',
+    require('./src/utils/shortcodes/twitterLink.js')
+  );
+  config.addShortcode(
+    'oldContentWarning',
+    require('./src/utils/shortcodes/oldContentWarning.js')
+  );
 
   // add support for syntax highlighting
   config.addPlugin(syntaxHighlight);

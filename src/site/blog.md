@@ -9,11 +9,11 @@ subtitle: Read some of my musings on web development, digital accessibility, tec
   <!-- {%- if subtitle %}<p class="subtitle">{{ subtitle | safe }}</p>{% endif %} -->
   
   <p class="center">
-    <span class="post__tag"><a href="/blog">Post</a></span>
-    <span class="post__tag"><a href="/blog/dev">Dev</a></span>
-    <span class="post__tag"><a href="/blog/a11y">A11y</a></span>
-    <span class="post__tag"><a href="/blog/life">Life</a></span>
-    <span class="post__tag"><a href="/blog/speaking">Speaking</a></span>
+    <span class="post__tag"><a href="/category">Post</a></span>
+    <span class="post__tag"><a href="/category/dev">Dev</a></span>
+    <span class="post__tag"><a href="/category/a11y">A11y</a></span>
+    <span class="post__tag"><a href="/category/life">Life</a></span>
+    <span class="post__tag"><a href="/category/speaking">Speaking</a></span>
   </p>
 
   <ul class="listing">
