@@ -31,12 +31,14 @@
   </head>
   <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
 
-    <div id="main" class="container">
-      {% include "header.njk" %}
+    <div class="-page -base">
+      <div class="container">
+        {% include "header.njk" %}
 
-      {{ content | safe }}
-      
-      {% include "footer.njk" %}
+        {{ content | safe }}
+        
+        {% include "footer.njk" %}
+      </div>
     </div>
 
     {% set js %}
