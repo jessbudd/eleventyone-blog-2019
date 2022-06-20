@@ -1,7 +1,7 @@
 <li >
   <time datetime="{{ post.date }}">{{ post.date | dateDisplay(" d LLLL  y") }}</time>
   <h2 class="h3 archive__title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-  {%- if post.data.excerpt %}<p> {{ post.data.excerpt }}</p>{% endif %}
+  {{ post.templateContent | excerpt }}
 
  
 <div class="archive__links">
