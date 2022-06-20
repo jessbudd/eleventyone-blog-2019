@@ -25,7 +25,7 @@ body {
   font-family: sans-serif;
   font-weight: 300;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.5;
   min-height: 100vh;
   background: $page-color;
   /* background: url(/images/bg-grid.png), linear-gradient(320deg, $page-color 100%, $text-color 0%); */
@@ -190,14 +190,9 @@ p {
 
 .subtitle {
   font-size: 1.175em;
-  margin-top: 1em;
-  margin-bottom: 48px;
+  margin-top: 36px;
+  margin-bottom: 36px;
   text-align: left;
-}
-@media (min-width: $mid) {
-  .subtitle {
-    font-size: 1.3em;
-  }
 }
 
 hr {
@@ -387,6 +382,11 @@ pre[class*='language-'] {
   font-size: 0.8em;
   font-style: italic;
   color: $heading-color;
+}
+.codeblock__filename {
+  font-size: 0.675rem;
+  float: right;
+  padding: 0.5rem 0;
 }
 
 main {
@@ -638,6 +638,9 @@ twitter-widget {
   }
 }
 /* fallback styles for twitter embeds */
+.twitter-tweet {
+  padding-bottom: 16px;
+}
 blockquote.twitter-tweet {
   display: inline-block;
   font-family: 'Helvetica Neue', Roboto, 'Segoe UI', Calibri, sans-serif;

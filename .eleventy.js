@@ -31,6 +31,10 @@ module.exports = function (config) {
     require('./src/utils/shortcodes/twitterLink.js')
   );
   config.addShortcode(
+    'filename',
+    require('./src/utils/shortcodes/filename.js')
+  );
+  config.addShortcode(
     'oldContentWarning',
     require('./src/utils/shortcodes/oldContentWarning.js')
   );
