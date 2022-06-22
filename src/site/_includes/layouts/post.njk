@@ -35,6 +35,7 @@
   </head>
   <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
 
+  <div class="-page -post">
     <div class="container">
       {% include "header.njk" %}
 
@@ -51,19 +52,21 @@
 
         {{ content | safe }}
 
-        {% include "blog-bio.njk" %}
+        {% include "blog-footer.njk" %}
 
         {% include "footer.njk" %}
 
       </article>
+    </div>
+  </div>
 
-    {% set js %}
-      {% include "js/core.js" %}
-    {% endset %}
-    <script>{{ js | jsmin | safe }}</script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+  {% set js %}
+    {% include "js/core.js" %}
+  {% endset %}
+  <script>{{ js | jsmin | safe }}</script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
 
   </body>
 </html>

@@ -22,12 +22,17 @@ module.exports = function (config) {
 
   // Add some utility filters
   config.addFilter('squash', require('./src/utils/filters/squash.js'));
+  config.addFilter('excerpt', require('./src/utils/filters/excerpt.js'));
   config.addFilter('dateDisplay', require('./src/utils/filters/date.js'));
 
   // Shortcodes
   config.addShortcode(
     'twitter',
     require('./src/utils/shortcodes/twitterLink.js')
+  );
+  config.addShortcode(
+    'filename',
+    require('./src/utils/shortcodes/filename.js')
   );
   config.addShortcode(
     'oldContentWarning',

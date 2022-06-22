@@ -25,7 +25,7 @@ body {
   font-family: sans-serif;
   font-weight: 300;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.5;
   min-height: 100vh;
   background: $page-color;
   /* background: url(/images/bg-grid.png), linear-gradient(320deg, $page-color 100%, $text-color 0%); */
@@ -36,26 +36,16 @@ body {
     font-size: 18px;
   }
 }
-
-.container {
+.-page > .container {
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  padding: 0 20px;
   text-align: left;
-}
-@media (min-width: $mid) {
-  .container {
-    max-width: 700px;
-  }
-}
-@media (min-width: $desk) {
-  .container {
+  @media (min-width: $desk) {
     max-width: 800px;
   }
-}
-@media (min-width: $wide) {
-  .container {
-    max-width: 1200px;
+  @media (min-width: $wide) {
+    max-width: 1100px;
   }
 }
 .center {
@@ -86,7 +76,7 @@ body {
   border-bottom: none;
 }
 .post__tag-list {
-  margin: 1.5rem 0 0.5rem;
+  margin: 1.5rem 0 1rem;
 }
 .archive__links {
   display: flex;
@@ -200,14 +190,9 @@ p {
 
 .subtitle {
   font-size: 1.175em;
-  margin-top: 1em;
-  margin-bottom: 48px;
+  margin-top: 36px;
+  margin-bottom: 36px;
   text-align: left;
-}
-@media (min-width: $mid) {
-  .subtitle {
-    font-size: 1.3em;
-  }
 }
 
 hr {
@@ -244,8 +229,10 @@ a:focus {
   border-bottom-style: none;
 }
 
-.nav {
+.-page .nav {
   padding-top: 3em;
+  padding-left: 0;
+  margin-left: 0;
 
   li {
     display: inline;
@@ -396,6 +383,11 @@ pre[class*='language-'] {
   font-style: italic;
   color: $heading-color;
 }
+.codeblock__filename {
+  font-size: 0.675rem;
+  float: right;
+  padding: 0.5rem 0;
+}
 
 main {
   margin-top: 4em;
@@ -414,15 +406,9 @@ main {
 } */
 
 .hero {
-  display: flex;
-  flex-direction: column-reverse;
-  @media (min-width: $wide) {
-    flex-direction: row;
-    text-align: left;
-  }
-  @media (min-width: $desk) {
-    /* grid-template-columns: 40% 60%; */
-  }
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 .hero__copy {
   text-align: center;
@@ -432,44 +418,13 @@ main {
     margin-bottom: 0;
   }
 }
-@media (min-width: $wide) {
-  .hero__copy {
-    text-align: left;
-    width: 50%;
-    padding-right: 1em;
-    padding-top: 24px;
-    /* padding-bottom: 32px; */
-  }
-}
 .hero__img {
-  width: 80%;
-  align-self: center;
-}
-@media (min-width: $wide) {
-  .hero__img {
-    width: 50%;
-  }
-}
-.hero__copy-alt {
-  width: 100%;
-}
-@media (min-width: $desk) {
-  .hero__copy-alt {
-    width: 60%;
-    padding-right: 1em;
-    padding-top: 60px;
-  }
-}
-.hero__img-alt {
-  width: 100%;
-  align-self: center;
-}
-@media (min-width: $desk) {
-  .hero__img-alt {
-    width: 40%;
-  }
-}
+  text-align: center;
 
+  svg {
+    max-width: 40rem;
+  }
+}
 .emoji-legend {
   color: $heading-color;
   font-size: 0.9em;
@@ -683,6 +638,9 @@ twitter-widget {
   }
 }
 /* fallback styles for twitter embeds */
+.twitter-tweet {
+  padding-bottom: 16px;
+}
 blockquote.twitter-tweet {
   display: inline-block;
   font-family: 'Helvetica Neue', Roboto, 'Segoe UI', Calibri, sans-serif;
