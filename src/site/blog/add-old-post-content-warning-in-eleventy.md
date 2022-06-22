@@ -3,7 +3,7 @@ title: Add an 'Old Content' warning in Eleventy
 subtitle:
 date: 2022-06-23
 meta: Add a warning to your old blog posts in 11ty to stop readers getting sucked into a timewarp!
-img: https://jessbudd.com/images/featured/cold-content-warning.jpg
+img: https://jessbudd.com/images/featured/old-content-warning.jpg
 tags: [post, dev]
 ---
 
@@ -117,7 +117,7 @@ module.exports = (date) => {
 </code>
 </pre>
 
-It turns out returning null (or simply returning) as I do in ReactLand does not work here.
+It turns out returning `null` (or simply returning) as I do in ReactLand does not work here.
 
 Shortcodes _must_ return something.
 
