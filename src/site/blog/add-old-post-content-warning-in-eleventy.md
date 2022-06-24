@@ -13,7 +13,7 @@ tags: [post, dev]
 
 [Aaron Powell retweeted](https://twitter.com/slace/status/1537682232025837569?s=20&t=c1CVjVBEK5A_Luyyko_lCg) that he'd added a step to his blog build engine to include a warning if the post was more than three years old. Brilliant!
 
-So, not only does he have the date for those that care to look, but he also has a banner that catches people's attention and keeps them from going down a no-longer-relevant rabbit hole.
+Not only does he have the date for those that care to look, but he also has a banner that catches people's attention and keeps them from going down a no-longer-relevant rabbit hole.
 
 ## Ulterior motives
 
@@ -29,7 +29,7 @@ So on a rainy Sunday afternoon I got to work.
 
 This blog is built with a simple site generator called [Eleventy](https://www.11ty.dev/). It's written in JavaScript, and gives you freedom to choose your templating language (I like nunjucks).
 
-The first thing I did was open up the [Eleventy docs](https://www.11ty.dev/docs/dates/) for working with dates. There were a number of date values available to templates including `created`, `Last Modified` and the `date` added by [front matter](https://www.11ty.dev/docs/data-frontmatter/#front-matter-data)].
+The first thing I did was open up the [Eleventy docs](https://www.11ty.dev/docs/dates/) for working with dates. There were a number of date values available to templates including `created`, `Last Modified` and the `date` added by [front matter](https://www.11ty.dev/docs/data-frontmatter/#front-matter-data).
 
 Sometimes I go back and fix a stray typo on old posts, so I didn’t want to use the `Last Modified` date. And sometimes I write a post long before I actually publish it which ruled out `created`. This left using the front matter date as making the most sense.
 
@@ -57,11 +57,11 @@ We can't write our function inside a nunjucks template, so where do we add the c
 
 ## Eleventy shortcodes
 
-Eleventy enables you to create and use [shortcodes](https://www.11ty.dev/docs/shortcodes/). These are like shortcuts you can add to your template (or markdown) that will call your JavaScript function and return whatever the value.
+Eleventy enables you to create and use [shortcodes](https://www.11ty.dev/docs/shortcodes/). These are like shortcuts you can add to your template (or markdown) that will call your JavaScript function and returns a value.
 
 Shortcodes are added to your Eleventy config file (`eleventy.js`). You can house the entire shortcode function in your config file, or you can import it from another file. I prefer to reference filters and shortcodes, while keeping the actual code separated into their own files.
 
-I also like to do my 'setup' first, so I added the shortcode to the config before I actually created it. In the example below, 'oldContentWarning' is the name of shortcode file, and the second part is the path to that file from the root folder.
+I also like to do my 'setup' first, so I added the shortcode reference to the config before I actually created it. In the example below, 'oldContentWarning' is the name of shortcode file, and the second part is the path to that file from the root folder.
 
 <pre>
 {% filename "eleventy.js" %}
