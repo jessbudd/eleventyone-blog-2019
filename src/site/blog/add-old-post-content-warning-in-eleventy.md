@@ -61,7 +61,7 @@ Eleventy enables you to create and use [shortcodes](https://www.11ty.dev/docs/sh
 
 Shortcodes are added to your Eleventy config file (`eleventy.js`). You can house the entire shortcode function in your config file, or you can import it from another file. I prefer to reference filters and shortcodes, while keeping the actual code separated into their own files.
 
-I also like to do my 'setup' first, so I added the shortcode reference to the config before I actually created it. In the example below, 'oldContentWarning' is the name of shortcode file, and the second part is the path to that file from the root folder.
+I also like to do my 'setup' first, so I added the shortcode reference to the config before I actually created it. In the example below, "oldContentWarning" is the name of shortcode file, and the second part is the path to that file from the root folder.
 
 <pre>
 {% filename "eleventy.js" %}
@@ -173,4 +173,4 @@ I added a touch of styling, and voila`!
 
 The date comparison takes place at build time because the website is statically generated. This means the difference in time calculated will be off by however long it's been since I triggered the last build.
 
-My posting is sporadic, so this will definitely happen. But even with this limitation it suits my use case - so I'm happy!
+My posting is sporadic, so sometimes a post could be more than 2 years old without the warning. But even with this limitation it suits my use case - so I'm happy!
