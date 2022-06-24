@@ -39,7 +39,7 @@ body {
 .-page > .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
+  padding: 0 15px;
   text-align: left;
   @media (min-width: $desk) {
     max-width: 800px;
@@ -54,7 +54,6 @@ body {
 .container__blog {
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
   text-align: left;
 }
 .post__tag:first-of-type {
