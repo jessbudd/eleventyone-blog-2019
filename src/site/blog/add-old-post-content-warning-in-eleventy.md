@@ -162,7 +162,7 @@ Using the shortcode within my nunjucks template was simple. (Shortcodes can also
 
 I added a touch of styling, and voila`!
 
-[See it in action](http://localhost:8080/blog/hiding-content-accessibly/).
+[See it in action](https://jessbudd.com/blog/hiding-content-accessibly/).
 
 <!-- <figure>
 <img src="/images/posts/2022/screenshot-old-content-warning.jpg" alt="Old content warning reads 'This post is over two years old, the content may be out of date.'" />
