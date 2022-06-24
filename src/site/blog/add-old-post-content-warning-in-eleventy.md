@@ -79,7 +79,7 @@ module.exports = function (config) {
 </code>
 </pre>
 
-I then created my shortcode folder and 'oldContentWarning.js'.
+I then created my shortcode folder and new `oldContentWarning.js` file.
 
 I started by importing the DateTime module from Luxon and adding a brief description of the function for future reference.
 
@@ -97,7 +97,7 @@ const {DateTime} = require('luxon');
 
 I then wrote a module that would take the front matter date as an argument and determine how many months there were between that date and now.
 
-If the difference was more than 24 months, it would return some html warning the user the content was old. If the difference was less than 24 months, it would just bail out and return null.
+If the difference was more than 24 months, it would return some HTML warning the user the content was old. If the difference was less than 24 months, it would just bail out and return null.
 
 <pre>
 {% filename "oldContentWarning.js" %}
@@ -121,7 +121,9 @@ It turns out returning `null` (or simply returning) as I do in ReactLand does no
 
 Shortcodes _must_ return something.
 
-I changed `null` to an empty string and it worked. Here's the full code:
+I changed `null` to an empty string and it worked.
+
+Here's the full code:
 
 <pre>
 {% filename "oldContentWarning.js" %}
@@ -141,7 +143,7 @@ module.exports = (date) => {
         This post is over two years old, the content may be out of date.
     &#60;/p&#62;`;
   } else {
-    return null;
+    return ``;
   }
 };
 </code>
