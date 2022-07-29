@@ -1,8 +1,9 @@
 ---
 title: Automate checking a ticket system's availability with Node.js
 date: 2022-07-27
-meta: How I made a script to checks a booking site's availability and email me when I can book
+meta: How I used Node.js and Pipedream to automatically scrape a ticket booking site and notify me if the availability on the weekend had changed.
 img: https://jessbudd.com/images/featured/web-scraper.png
+excerpt: How I used Node.js and Pipedream to automatically scrape a ticket booking site and notify me if the availability on the weekend had changed.
 tags: [post, dev]
 ---
 
