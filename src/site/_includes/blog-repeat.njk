@@ -1,7 +1,10 @@
 <li >
   <time datetime="{{ post.date }}">{{ post.date | dateDisplay(" d LLLL  y") }}</time>
   <h2 class="h3 archive__title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+  {%- if post.data.meta %}<p>{{ post.data.meta }}</p>
+  {% else %}
   {{ post.templateContent | excerpt }}
+  {% endif %}
 
  
 <div class="archive__links">
