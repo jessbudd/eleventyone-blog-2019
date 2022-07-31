@@ -1,21 +1,23 @@
 ---
 title: Automate checking a ticket system's availability with Node.js
 date: 2022-07-27
-meta: How I used Node.js and Pipedream to automatically scrape a ticket booking site and notify me if the availability on the weekend had changed.
+meta: How I used Node.js and Pipedream to automatically scrape a ticket booking site and notify me if availability had changed.
 img: https://jessbudd.com/images/featured/web-scraper.png
 excerpt: How I used Node.js and Pipedream to automatically scrape a ticket booking site and notify me if the availability on the weekend had changed.
 tags: [post, dev]
 ---
 
-I was recently on holiday with my family and wanted to book seats on a tour bus for the coming weekend. Unfortunately, being peak season, there were no bookings available on their website booking page. I asked the company if there was a wait list we could join and I was told there wasn’t, but that I should keep checking the website as it will show availability when anyone cancels or moves their booking.
+This post is about how I recently built a workflow to notify me when tickets became available on a particular site.
 
-I didn’t love the idea of spending holiday time sitting and refreshing a website to check for availability, but it did seem like the perfect repetitive task for a computer.
+I was recently on holiday and wanted to book seats on a tour bus for the coming weekend. Unfortunately, being peak season, the tickets were sold out on their booking page. I asked the service company if there was a wait list we could join but there wasn’t. They advised I should keep checking back to the website as it will automatically update the availability when someone cancels or moves their booking.
+
+The thought of spending time manually checking and refreshing the booking page repetitively did not appeal. But it did seem like the perfect task for a computer.
 
 ## The idea
 
 I’d not built a web scraper before, but it seemed like something a front end dev could figure out without too much trouble.
 
-The bus bookings are made with online booking system Trybooking. From googling, I knew they had an API that needed authentication with a API key, so my first thought was that perhaps the key was sent in a query string or a cookie I could find in inspector dev tools.
+The bus bookings are made with popular online booking system Trybooking. From googling, I knew they had an API that needed authentication with a API key, so my first thought was that perhaps the key was sent in a query string or a cookie I could find in inspector dev tools.
 
 When I was scanned the network tab I found a fetch request with a name matching the number in the Trybooking url. The request url included the terms "calendar session times" which sounded like a winner!
 
