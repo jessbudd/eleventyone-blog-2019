@@ -17,7 +17,7 @@ The thought of spending time manually checking and refreshing the booking page r
 
 I’d not built a web scraper before, but it seemed like something a front end dev could figure out in an evening.
 
-The bus bookings are made with popular online booking system Trybooking. From googling, I knew they had an API that needed authentication with a API key, so my first thought was that perhaps the key was sent in a query string or a cookie I could find in inspector dev tools.
+The bus bookings were made with an online booking system called Trybooking. From googling, I knew they had an API that needed authentication with a API key, so my first thought was that perhaps the key was sent in a query string or a cookie I could find in inspector dev tools.
 
 When I scanned the network tab I found a fetch request with a name matching the number in the Trybooking url. The request url included the terms "calendar session times" which sounded like a winner!
 
@@ -45,7 +45,7 @@ Opening the url returned a simple array of objects, each with an event date and 
 
 I could see the dates I wanted were the first two objects; 16 July and 17 July. I would just need to check if either of those date's `isAvailable` value was true. This should be pretty easy!
 
-I started writing some pseudo code to plan out what I needed to do.
+I quickly wrote some pseudo code to plan out what I needed to do.
 
 <pre class="wrap sml">
 // every X minutes (chron job?)
@@ -83,7 +83,7 @@ Next I added a node step to the workflow.
 
 I wrote a basic script that:
 
-- uses the [Axios library](https://axios-http.com/) to request the web page
+- uses the [Axios](https://axios-http.com/) library to request the web page
 - adds the response data to a JavaScript object variable
 - checks if there was availability on Saturday or Sunday
 - prints a message to the console based on the availability (or not)
@@ -96,17 +96,17 @@ export default defineComponent({
     async run({ steps, $ }) {
 
         async function fetchHTML(url) {
-        const { data } = await axios.get(url)
-        return data;
+            const { data } = await axios.get(url)
+            return data;
         }
 
         // fetch the booking site availability as array
         const data = await fetchHTML("https://www.trybooking.com/events/calendar-session-times/911314");
 
         if (data[0].isAvailable || data[1].isAvailable) {
-          console.log("Availability!");
+            console.log("Availability!");
         } else {
-          console.log("No availability boo");
+            console.log("No availability boo");
         }
     }
 });
@@ -116,7 +116,6 @@ export default defineComponent({
 Pipedream has a "test workflow" function to check what I had so far. Running it worked.
 
 <img src="/images/posts/2022/15.png" alt="Screenshot of Pipedream workflow confirming a successful test run"/>
-
 
 ### Set up notification alerts
 
@@ -169,7 +168,7 @@ Next I retrieve the last state from the data store (though there isn't one yet, 
 <pre class="wrap sml">
 <code class="lang-js">
 const previousAvailability = await this.data.get('previousAvailability');
-const currentAvailability = isSaturdayAvailable || isSundayAvailable
+const currentAvailability = (data[0].isAvailable || (data[1].isAvailable 
 </code>
 </pre>
 
@@ -182,7 +181,7 @@ If they're different and availability _has changed_, then send me an email to te
 <pre class="wrap sml">
 <code class="lang-js">
 if (currentAvailability !== previousAvailability) {
-    if (isSaturdayAvailable || isSundayAvailable) {
+    if ( currentAvailability ) {
         $.send.email({
         subject: `Availability!`,
         text: `They have availability on ${isSaturdayAvailable ? 'Saturday' : 'Sunday'} - yay!`
@@ -244,7 +243,7 @@ export default defineComponent({
         // compare the previous availability with the current availability
         // send email only if the availability has CHANGED
         if (currentAvailability !== previousAvailability) {
-            if (isSaturdayAvailable || isSundayAvailable) {
+            if ( currentAvailability ) {
                 $.send.email({
                     subject: `Availability!`,
                     text: `They have availability on 
