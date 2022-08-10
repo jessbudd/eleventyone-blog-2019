@@ -171,7 +171,7 @@ if (currentAvailability !== previousAvailability) {
 </code>
 </pre>
 
-Then the last step we need to do is update the data store availability prop to the value returned from this instance of the workflow.
+The last step was to set or update the data store availability prop to the value returned from this instance of the workflow.
 
 <pre class="wrap sml">
 <code class="lang-js">
@@ -181,7 +181,7 @@ Then the last step we need to do is update the data store availability prop to t
 
 ### Deploy
 
-With this latest step done and dusted, I deployed the app live.
+With this last step done and dusted, I deployed the app live.
 
 This is what the final node script looked like:
 
@@ -241,6 +241,6 @@ export default defineComponent({
 
 And that's it!
 
-We were able to get notified by email when tickets became available for our chosen dates.
+I was able to get notified by email when tickets became available for our chosen dates (or if they very quickly sold out again before I had time to get to buy them).
 
-Overall, I was surprised how fast and easy it was to set up, and can definitely see myself creating similar workflows in the future.
+Overall, I was pleasantly surprised how fast and easy it was to set up, and can definitely see myself creating similar workflows in the future.
