@@ -43,7 +43,7 @@ Opening the url returned a simple array of objects, each with an event date and 
 </code>
 </pre>
 
-I could see the date's I wanted were the first two objects; 16 July and 17 July. I would just need to check if either of those date's `isAvailable` key value was true. This should be pretty easy!
+I could see the dates I wanted were the first two objects; 16 July and 17 July. I would just need to check if either of those date's `isAvailable` key value was true. This should be pretty easy!
 
 I started writing some pseudo code to plan out what I needed to do.
 
@@ -59,9 +59,9 @@ I started writing some pseudo code to plan out what I needed to do.
 
 I didn't have any spare servers to run a script, so looked for some kind of service that could host and run it for free. I came across [Pipedream](https://pipedream.com/) which fit the bill perfectly.
 
-It allows 333 invocations per day on their free plan. I only needed this web scraper for 3-4 days, so this would determine how often I could run my script.
+It allows 333 "invocations" per day on their free plan. I only needed this web scraper for 3-4 days, so this would determine how often I could run my script.
 
-333 invocations divided by 24 hours a day, divide 60 minutes per hour by that, gives you an 4 invocation every 5 minutes-ish.
+333 invocations divided by 24 hours a day, divide 60 minutes per hour by that, gives you roughly an invocation every 5 minutes.
 
 I signed up for Pipedream's free tier and started a new workflow.
 
@@ -71,7 +71,7 @@ It first asks what type of trigger you need. I selected "Schedule" to set up a r
 
 <img src="/images/posts/2022/7.png" alt="Screenshot of Pipedream interface prompting user to select a trigger"/>
 
-I then chose a "Custom interval" of every 5 minutes. I then needed to generate and select a sample event to move on to the next step.
+I then chose a "Custom interval" of every 5 minutes. I needed to generate and select a sample event to move on to the next step.
 
 <img src="/images/posts/2022/11.png" alt="Screenshot of Pipedream interface confirming an interval chosen of 5 mintues"/>
 
@@ -88,7 +88,7 @@ I wrote a basic script that:
 - checks if there was availability on Saturday or Sunday
 - prints a message to the console based on the availability (or not)
 
-And then used Pipedream's "test" function to check what I had so far, and it worked.
+Pipedream has a "test workflow" function to check what I had so far. Running it worked.
 
 <img src="/images/posts/2022/15.png" alt="Screenshot of Pipedream workflow confirming a successful test run"/>
 
@@ -96,9 +96,9 @@ And then used Pipedream's "test" function to check what I had so far, and it wor
 
 I knew the ability to email yourself results was built into Pipedream, but since I was on holidays I wasn’t planning to be checking my emails often.
 
-[Twillio](https://www.twilio.com/messaging/sms) has API’s for sending messages so I signed up for a free trial. Unfortunately, the rules on sending sms in Australia are pretty strict and it takes around 3 business days to be verified and approved to do so. More time than I really had for this use case, so I ended up sticking with the built in email method, but this would be a really cool feature to implement down the track.
+[Twillio](https://www.twilio.com/messaging/sms) has API’s for sending messages so I signed up for a free trial. Unfortunately, the rules on sending sms in Australia are pretty strict and it takes around 3 business days to be verified and approved to do so. More time than I really had to get this up and running, so I stuck with the built in email method. It would be cool to add sms notifications down the track.
 
-There are [two ways to email yourself](https://pipedream.com/docs/destinations/email/#using-send-email-in-workflows) in Pipedream; one as a separate step in the workflow and one inside the node code and step. I wanted to keep as much as possible within the code as possible, so went with the second option.
+There are [two ways to email yourself](https://pipedream.com/docs/destinations/email/#using-send-email-in-workflows) in Pipedream. One as a separate step in the workflow and one inside the node code and step. I wanted to keep as much as possible within the code as possible, so went with the second option.
 
 <pre class="wrap sml">
 <code class="lang-js">
@@ -120,15 +120,15 @@ if ( data[0].isAvailable || data[1].isAvailable) {
 
 I deployed my workflow and triggered a test run. Within 30 seconds I had an email to the email address I signed up to Pipedream with. It showed the correct flow that there was no availability.
 
-Now, while I want the workflow to _run_ every 5 minutes - I don't want an email every 5 minutes.
+Now, while I want the workflow to _run_ every 5 minutes - I don't want _an email_ every 5 minutes.
 
 This is where Pipedreams Data Stores comes in.
 
 ### Persistng state
 
-[Data Stores](https://pipedream.com/docs/code/nodejs/using-data-stores) allow you to pass information from one instance of a workflow to the next instance of the workflow. So I can set a workflow state of whether there is availability, and set an if/else statement to only send an email if the availability actually changes.
+[Data Stores](https://pipedream.com/docs/code/nodejs/using-data-stores) allow you to pass information from one instance of a workflow to the next instance of the workflow. So I can set a workflow state of whether there is availability, and set an `if/else` statement to only send an email if the availability actually changes.
 
-First we need to add a props state to create and access a data store for this workflow.
+First I add a props state to create and access a data store for this workflow.
 
 <pre class="wrap sml">
 <code class="lang-js">
@@ -138,7 +138,7 @@ props: {
 </code>
 </pre>
 
-Next we want to retrieve the last state from the data store, so we compare the state from the previous workflow run with the status from the current workflow run.
+Next I retrieve the last state from the data store (though there isn't one yet, we'll be setting that soon). I also set a variable for when the availability is on _this_ instance of the workflow.
 
 <pre class="wrap sml">
 <code class="lang-js">
@@ -149,7 +149,7 @@ const currentAvailability = isSaturdayAvailable || isSundayAvailable
 
 Then compare the availability status in the data store with the availability status from this instance.
 
-If they're the same, we can just do nothing. I don't need an email notification to tell me nothing has changed.
+If they're the same, we can bail out and do nothing. I don't need an email notification to tell me nothing has changed.
 
 If they're different and availability _has changed_, then send me an email to tell me what the current state is.
 
