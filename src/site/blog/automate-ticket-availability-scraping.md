@@ -88,9 +88,35 @@ I wrote a basic script that:
 - checks if there was availability on Saturday or Sunday
 - prints a message to the console based on the availability (or not)
 
+<pre class="wrap sml">
+<code class="lang-js">
+import axios from "axios";
+
+export default defineComponent({
+    async run({ steps, $ }) {
+
+        async function fetchHTML(url) {
+        const { data } = await axios.get(url)
+        return data;
+        }
+
+        // fetch the booking site availability as array
+        const data = await fetchHTML("https://www.trybooking.com/events/calendar-session-times/911314");
+
+        if (data[0].isAvailable || data[1].isAvailable) {
+          console.log("Availability!");
+        } else {
+          console.log("No availability boo");
+        }
+    }
+});
+</code>
+</pre>
+
 Pipedream has a "test workflow" function to check what I had so far. Running it worked.
 
 <img src="/images/posts/2022/15.png" alt="Screenshot of Pipedream workflow confirming a successful test run"/>
+
 
 ### Set up notification alerts
 
@@ -98,7 +124,7 @@ I knew the ability to email yourself results was built into Pipedream, but since
 
 [Twillio](https://www.twilio.com/messaging/sms) has API’s for sending messages so I signed up for a free trial. Unfortunately, the rules on sending sms in Australia are pretty strict and it takes around 3 business days to be verified and approved to do so. More time than I really had to get this up and running, so I stuck with the built in email method. It would be cool to add sms notifications down the track.
 
-There are [two ways to email yourself](https://pipedream.com/docs/destinations/email/#using-send-email-in-workflows) in Pipedream. One as a separate step in the workflow and one inside the node code and step. I wanted to keep as much as possible within the code as possible, so went with the second option.
+There are [two ways to email yourself](https://pipedream.com/docs/destinations/email/#using-send-email-in-workflows) in Pipedream. One as a separate step in the workflow and one inside the node step. I wanted to keep as much as possible within the code as possible, so went with the second option.
 
 <pre class="wrap sml">
 <code class="lang-js">
