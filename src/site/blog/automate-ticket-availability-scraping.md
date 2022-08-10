@@ -168,7 +168,7 @@ Next I retrieve the last state from the data store (though there isn't one yet, 
 <pre class="wrap sml">
 <code class="lang-js">
 const previousAvailability = await this.data.get('previousAvailability');
-const currentAvailability = (data[0].isAvailable || (data[1].isAvailable 
+const currentAvailability = data[0].isAvailable || data[1].isAvailable; 
 </code>
 </pre>
 
@@ -183,13 +183,13 @@ If they're different and availability _has changed_, then send me an email to te
 if (currentAvailability !== previousAvailability) {
     if ( currentAvailability ) {
         $.send.email({
-        subject: `Availability!`,
-        text: `They have availability on ${isSaturdayAvailable ? 'Saturday' : 'Sunday'} - yay!`
+            subject: `Availability!`,
+            text: `They have availability on ${isSaturdayAvailable ? 'Saturday' : 'Sunday'} - yay!`
         })
     } else {
         $.send.email({
-        subject: `No Availability :(`,
-        text: `They have no availability.`
+            subject: `No Availability :(`,
+            text: `They have no availability.`
         })
     }
 }
