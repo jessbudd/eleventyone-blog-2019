@@ -11,7 +11,7 @@ This post is about how I recently built a workflow to notify me when tickets bec
 
 I was recently on holiday and wanted to book seats on a tour bus for the coming weekend. Unfortunately, being peak season, the tickets were sold out on their booking page. I asked the service company if there was a wait list we could join but there wasn’t. They advised I should keep checking back to the website as it will automatically update the availability when someone cancels or moves their booking.
 
-The thought of spending time manually checking and refreshing the booking page repetitively did not appea - but it did seem like the perfect job for a computer.
+The thought of spending time manually checking and refreshing the booking page repetitively did not appeal - but it did seem like the perfect job for a computer.
 
 ## The idea
 
