@@ -1,5 +1,5 @@
 ---
-title: Automate checking a ticket system's availability with Node.js and Pipedream and Pipedream
+title: Automate checking a ticket system's availability with Node.js and Pipedream
 date: 2022-07-27
 meta: How I used Node.js and Pipedream to automatically scrape a ticket booking site and notify me if availability had changed.
 img: https://jessbudd.com/images/featured/web-scraper.png
