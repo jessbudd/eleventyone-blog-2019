@@ -300,9 +300,10 @@ a:focus {
 .accent {
   color: $accent-color;
 }
-blockquote {
+blockquote,
+.quote {
   padding-left: 18px;
-  margin-left: 24px;
+  margin: 2rem;
   border-left: 1px solid $accent-color;
   p {
     color: $accent-color;
