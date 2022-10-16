@@ -43,7 +43,8 @@
         {% include "footer.njk" %}
       </div>
     </div>
-
+    {% set js %}
+    {% endset %}
     <script>
       {{ js | jsmin | safe }}
     </script>
