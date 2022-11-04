@@ -1,75 +1,84 @@
 <!doctype html>
 <html lang="en-au">
   <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-103059618-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-103059618-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-  gtag('config', 'UA-103059618-2');
-</script>
+      gtag('config', 'UA-103059618-2');
+    </script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
-     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon3.png">
-        <link rel="stylesheet" href="/css/prism.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon3.png">
+    <link rel="stylesheet" href="/css/prism.css">
     <title>{{ title }} - Jess Budd</title>
     {%- if meta %}<meta name="description" content="{{ meta | safe }}">{% endif %}
 
-<!--twitter sharing-->
+    <!--twitter sharing-->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@jessbudd4">
-    <meta name="twitter:site" content="@jessbudd4" />
+    <meta name="twitter:site" content="@jessbudd4"/>
     <meta name="twitter:title" content="{{ title | safe }}">
     {%- if meta %}
-    <meta name="twitter:description" content="{{ meta | safe }}">
+      <meta name="twitter:description" content="{{ meta | safe }}">
     {% endif %}
     {%- if img %}
-    <meta name="twitter:image" content="{{ img | safe }}">
-    <meta property="og:image" content="{{ img | safe }}" />
+      <meta name="twitter:image" content="{{ img | safe }}">
+      <meta property="og:image" content="{{ img | safe }}"/>
     {% endif %}
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5d9861d9c34c650019cbc214&product=inline-share-buttons" async="async"></script>
   </head>
   <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
 
-  <div class="-page -post">
-    <div class="container">
-      {% include "header.njk" %}
+    <div class="-page -post">
+      <div class="container">
+        {% include "header.njk" %}
 
-      <article id="main" class="container__blog">
-        <h1>{{ title }}</h1>
-        {%- if subtitle %}<p class="subtitle">{{ subtitle | safe }}</p>{% endif %}
+        <article id="main" class="container__blog">
+          <h1>{{ title }}</h1>
+          {%- if subtitle %}
+            <p class="subtitle">{{ subtitle | safe }}</p>
+          {% endif %}
 
-        <div class="post__tag-list">{% for i in tags %} <span class="post__tag"><a href="/category/{{ i }}" >tag: {{ i }}</a></span> {% endfor %}</div>
+          <div class="post__tag-list">
+            {% for i in tags %}
+              <span class="post__tag">
+                <a href="/category/{{ i }}" >tag: {{ i }}</a>
+              </span>
+            {% endfor %}
+          </div>
 
-        {% oldContentWarning page.date %}
-  
-        <div class="date">
-          Posted <time datetime="{{ date }}">{{ date | dateDisplay }}</time></div>
+          {% oldContentWarning page.date %}
 
-        {{ content | safe }}
+          <div class="date">
+          Posted <time datetime="{{ date }}">{{ date | dateDisplay }}</time>
+          </div>
 
-        {% include "blog-footer.njk" %}
+          {{ content | safe }}
 
-        {% include "footer.njk" %}
+          {% include "blog-footer.njk" %}
 
-      </article>
+          {% include "footer.njk" %}
+
+        </article>
+      </div>
     </div>
-  </div>
 
-  {% set js %}
-    {% include "js/core.js" %}
-  {% endset %}
-  <script>{{ js | jsmin | safe }}</script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+    {% set js %}
+    {% endset %}
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
 
   </body>
 </html>
-
-
-

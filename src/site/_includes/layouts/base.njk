@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="en-au">
-  <head><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-103059618-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-103059618-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-  gtag('config', 'UA-103059618-2');
-</script>
+      gtag('config', 'UA-103059618-2');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/prism.css">
@@ -20,12 +23,12 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@jessbudd4">
     <meta name="og:title" content="{{ title | safe }}">
-    <meta name="twitter:site" content="@jessbudd4" />
+    <meta name="twitter:site" content="@jessbudd4"/>
     {%- if meta %}
-    <meta name="og:description" content="{{ meta | safe }}">
+      <meta name="og:description" content="{{ meta | safe }}">
     {% endif %}
     {%- if img %}
-    <meta name="og:image" content="{{ img | safe }}">
+      <meta name="og:image" content="{{ img | safe }}">
     {% endif %}
 
   </head>
@@ -36,23 +39,17 @@
         {% include "header.njk" %}
 
         {{ content | safe }}
-        
+
         {% include "footer.njk" %}
       </div>
     </div>
-
     {% set js %}
-      {% include "js/core.js" %}
-      {% include "js/hello.js" %}
     {% endset %}
-    <script>{{ js | jsmin | safe }}</script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.js"></script>
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
-
-
 
   </body>
 </html>
-
-
-
