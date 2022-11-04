@@ -64,6 +64,7 @@ body {
   white-space: nowrap;
   font-family: Menlo, Consolas, Monaco, monospace;
   padding: 6px 12px;
+  margin-right: 6px;
   text-transform: lowercase;
   border-radius: 4px;
   border: 1px solid #01ffd2;
