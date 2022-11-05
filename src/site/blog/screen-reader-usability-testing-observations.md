@@ -1,7 +1,7 @@
 ---
 title: 5 takeaways from screen reader usability interviews
 date: 2022-11-05
-meta: Some interesting details I observed when conducting user testing with frequent screen reader users.
+meta: Some common patterns that stood out to me during usability interviews with frequent screen reader users.
 # img: https://jessbudd.com/images/featured/web-scraper.png
 excerpt: Some interesting details I observed when conducting user testing with frequent screen reader users.
 tags: [post, a11y, dev]
@@ -79,6 +79,3 @@ Testing your product for accessibility yourself will never compare with testing 
 
 
 Test for accessibility with automated tools, test manually yourself, then _test with people with disabilities_.
-
-
-<!-- _Side note_: This post started as a <a href="https://twitter.com/jessbudd4/status/1537620188324978688">twitter thread</a>. -->
