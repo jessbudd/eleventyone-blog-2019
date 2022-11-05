@@ -2,8 +2,7 @@
 title: 5 takeaways from screen reader usability interviews
 date: 2022-11-05
 meta: Some common patterns that stood out to me during usability interviews with frequent screen reader users.
-# img: https://jessbudd.com/images/featured/web-scraper.png
-excerpt: Some interesting details I observed when conducting user testing with frequent screen reader users.
+excerpt: Common patterns that stood out during usability testing with frequent screen reader users.
 tags: [post, a11y, dev]
 ---
 
@@ -11,7 +10,7 @@ Earlier this year I worked on the re-development of my workplace's primary websi
 
 I was pretty confident we were ticking the major boxes of complying with the [Web Content Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/) (WCAG), but I also know that technical compliance does not necessarily equal a good user experience for people with disabilities. As part of the overall user testing strategy, it was important to us to include people with disabilities.
 
-Of the five interviews we conducted with frequent screen reader users, some common patterns stood out to me:
+Of the five usability interviews we conducted with frequent screen reader users, some common patterns stood out to me:
 
 ## 1. Not using the tab key for navigating
 
