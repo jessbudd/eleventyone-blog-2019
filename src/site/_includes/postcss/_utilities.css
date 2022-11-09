@@ -1,5 +1,4 @@
 /* utilities */
-
 .sr-only:not(:focus):not(:active) {
     position: absolute;
     width: 1px;

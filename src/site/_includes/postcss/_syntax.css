@@ -5,12 +5,13 @@ https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clik
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
  * @author ocodia
  */
-
-$blue: #66d9ef;
-$green: #a6e22e;
-$orange: #fd971f;
-$yellow: #e6db74;
-$red: #f92672;
+code, pre {
+  --blue: #66d9ef;
+  --green: #a6e22e;
+  --orange: #fd971f;
+  --yellow: #e6db74;
+  --red: #f92672;
+}
 
 code[class*='language-'],
 pre[class*='language-'] {
@@ -76,7 +77,7 @@ pre[class*='language-'] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  color: $red;
+  color: var(--red);
 }
 
 .token.boolean,
@@ -90,7 +91,7 @@ pre[class*='language-'] {
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: $green;
+  color: var(--green);
 }
 
 .token.operator,
@@ -106,16 +107,16 @@ pre[class*='language-'] {
 .token.attr-value,
 .token.function,
 .token.class-name {
-  color: $yellow;
+  color: var(--yellow);
 }
 
 .token.keyword {
-  color: $blue;
+  color: var(--blue);
 }
 
 .token.regex,
 .token.important {
-  color: $orange;
+  color: var(--orange);
 }
 
 .token.important,
@@ -133,5 +134,5 @@ pre[class*='language-'] {
 /* Code blocks */
 pre .custom-highlight-js .token.operator,
 pre .custom-highlight-js .token.punctuation {
-  color: $yellow;
+  color: var(--yellow);
 }

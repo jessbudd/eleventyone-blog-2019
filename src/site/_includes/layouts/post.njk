@@ -34,13 +34,16 @@
       <meta property="og:image" content="{{ img | safe }}"/>
     {% endif %}
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5d9861d9c34c650019cbc214&product=inline-share-buttons" async="async"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
   <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
 
     <div class="-page -post">
-      <div class="container">
         {% include "header.njk" %}
 
+      <div class="container">
         <article id="main" class="container__blog">
           <h1>{{ title }}</h1>
           {%- if subtitle %}
@@ -65,10 +68,9 @@
 
           {% include "blog-footer.njk" %}
 
-          {% include "footer.njk" %}
-
         </article>
-      </div>
+</div>
+      {% include "footer.njk" %}
     </div>
 
     {% set js %}
