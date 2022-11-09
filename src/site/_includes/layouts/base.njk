@@ -31,8 +31,8 @@
       <meta name="og:image" content="{{ img | safe }}">
     {% endif %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
   </head>
   <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
@@ -43,10 +43,9 @@
       <div class="container">
         {{ content | safe }}
       </div>
-
-        {% include "footer.njk" %}
-      </div>
+      {% include "footer.njk" %}
     </div>
+
     {% set js %}
     {% endset %}
     <script>

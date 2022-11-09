@@ -1,0 +1,47 @@
+:root {
+  --headerHeight: 15rem;
+  --footerHeight: 15rem;
+
+  --radius-20: 2px;
+  --radius-40: 4px;
+  --radius-60: 6px;
+  --radius-80: 8px;
+  --radius-default: var(--radius-20);
+
+  /* breakpoints for media queries */
+  --narrow: 400px;
+  --mid: 740px;
+  --desk: 900px;
+  --wide: 1100px;
+
+  /* colours raw */
+  --purple-20: #cec2ef;
+  --purple-30: #ab9dcf;
+  --purple-40: #7963b3;
+  --purple-50: #684fa9;
+  --purple-60: #583ca0;
+  --purple-70: #4f3690;
+  --purple-80: #463080;
+  --purple-90: #382766;
+  --purple-100: #2c1e50;
+  --green-50: #00ffd2;
+  --neutral-0: #fff;
+  --neutral-100: #272822;
+  --twitter: #55acee;
+
+  /* colours brand */
+  --primary: var(--purple-80);
+  --secondary: var(--green-50);
+  --tertiary: var(--purple-20);
+
+  /* colours assigned*/
+  --page-color: var(--neutral-0);
+  --heading-color: var(--purple-20);
+  --text-color-primary: var(--purple-100);
+  --text-color-secondary: var(--neutral-0);
+  --accent-color: var(--secondary);
+  --dark-color: var(--purple-100);
+  --footer-color: var(--purple-100);
+  --black: var(--neutral-100);
+  --twitter: #55acee;
+}
