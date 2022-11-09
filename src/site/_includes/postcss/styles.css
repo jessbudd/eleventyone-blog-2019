@@ -326,8 +326,8 @@ a:focus {
 .accent {
   color: var(--accent-color);
 }
-
-blockquote {
+blockquote,
+.quote {
   padding-left: 18px;
   margin-left: 24px;
   border-left: 1px solid var(--accent-color);
