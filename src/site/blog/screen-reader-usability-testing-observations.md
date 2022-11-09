@@ -3,6 +3,7 @@ title: 5 takeaways from screen reader usability interviews
 date: 2022-11-05
 meta: Some common patterns that stood out to me during usability interviews with frequent screen reader users.
 excerpt: Common patterns that stood out during usability testing with frequent screen reader users.
+img: https://jessbudd.com/images/featured/takeaways-screen-reader-testing.png
 tags: [post, a11y, dev]
 ---
 
