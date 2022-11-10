@@ -105,7 +105,7 @@ a[href^="https://twitter"].twitter
 }
 
 h1 {
-  font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+  font-family: var(--font-brand);
   color: var(--primary);
 }
 
@@ -119,11 +119,6 @@ h5 {
   a:visited {
     color: var(--heading-color);
   }
-}
-
-a,
-a:link {
-  transition: 0.2s;
 }
 
 h1 {
@@ -196,6 +191,30 @@ p {
   color: var(--text-color-primary);
 }
 
+
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    font-weight: 800;
+    color: unset;
+    background-image: linear-gradient(120deg,var(--secondary) 0,var(--secondary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    -webkit-transition: background-size .25s ease-in;
+    transition: background-size .2s ease-in,color .25s ease-in;
+    text-decoration: none;
+}
+
+a,
+a:link {
+  transition: 0.2s;
+}
+
+a:not([class]):hover {
+  background-size: 100% 100%;
+}
+
 .subtitle {
   font-size: 1.175em;
   margin-top: 36px;
@@ -213,18 +232,6 @@ ol {
 }
 li {
   margin-bottom: 0.5rem;
-}
-
-a:visited {
-  color: var(--primary);
-  text-decoration: none;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-}
-a:hover,
-a:focus {
-  color: var(--accent-color);
-  border-bottom-color: var(--accent-color);
 }
 
 .nakedLink a:link,
@@ -245,7 +252,7 @@ a:focus {
   a:link,
   a:visited {
     font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
-    font-size: .75rem;
+    font-size: 0.75rem;
     border-top-style: solid;
     border-top-width: 1px;
     border-bottom-style: none;
@@ -386,8 +393,9 @@ pre[class*="language-"] {
   padding: 0.5rem 0;
 }
 
-main {
-  margin-top: 4em;
+#main {
+  min-height: calc(100vh - var(--footerHeight) - var(--headerHeight));
+  padding: 4em 1.5rem 2rem;
 }
 
 .emoji-legend {
@@ -450,22 +458,29 @@ main {
   }
 }
 .card {
-  padding: 0 18px;
-  margin-bottom: 24px;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
   background: white;
+}
+
+.footer-divider {
+  height: 100px;
+  overflow-x: clip;
+
+
+  svg {
+    fill: var(--footer-color);
+    max-width: none;
+  }
 }
 
 .footer {
   background-color: var(--footer-color);
   color: var(--secondary);
-  margin-top: 12em;
-  padding-bottom: 6em;
-  border-top-width: 1px;
-  border-top-style: solid;
+  padding: 4rem 0;
   position: relative;
   font-size: 0.7em;
   text-align: center;
-  overflow-x: clip;
 
   p {
     color: var(--tertiary);
@@ -481,14 +496,6 @@ main {
     color: var(--heading-color);
     border-bottom: solid 1px var(--heading-color);
   }
-}
-
-.footer-divider {
-  fill: var(--footer-color);
-  max-width: none;
-  position: absolute;
-  top: -125px;
-  left: 0;
 }
 
 .social-links__item {
@@ -621,18 +628,18 @@ twitter-widget {
   margin: 0;
 
   li {
-  list-style: none;
-  padding: 2rem;
-  border-radius: var(--radius-default);
-  background-color: var(--primary);
-}
+    list-style: none;
+    padding: 2rem;
+    border-radius: var(--radius-default);
+    background-color: var(--primary);
+  }
 
-.listing li:not(:last-of-type) {
-  border-bottom: var(--accent-color) 1px solid;
-}
-p {
-  color: var(--text-color-secondary)
-}
+  .listing li:not(:last-of-type) {
+    border-bottom: var(--accent-color) 1px solid;
+  }
+  p {
+    color: var(--text-color-secondary);
+  }
 
   a {
     color: var(--secondary);
@@ -640,13 +647,10 @@ p {
     text-decoration: none;
   }
 
-.archive__title {
-  margin-top: .75rem;
-  display: inline-block;
-
-
-}
-
+  .archive__title {
+    margin-top: 0.75rem;
+    display: inline-block;
+  }
 }
 
 time {

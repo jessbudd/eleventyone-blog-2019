@@ -1,6 +1,9 @@
 :root {
-  --headerHeight: 15rem;
-  --footerHeight: 15rem;
+
+  --font-brand: "Press Start 2P", Arial, Helvetica, sans-serif;
+
+  --headerHeight: 6.5rem;
+  --footerHeight: 19.5rem;
 
   --radius-20: 2px;
   --radius-40: 4px;
