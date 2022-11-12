@@ -1,8 +1,8 @@
 ---
 title: Speaker Profile
 layout: layouts/base.njk
-subtitle: Topics I am available to speak about include accessibility, front-end web development, HTML, CSS, project management, web design, community organisation, learning
-meta: Jess Budd is front-end developer, web accessibility consultant and digital producer based in Perth and available to speak at your next tech event.
+subtitle: Topics I'm available to speak about include front-end web development, web accessibility, React, HTML and CSS
+meta: Jess Budd is front-end developer and web accessibility advocate based in Perth.
 ---
 <div class="container__blog">
   <h1>{{title}}</h1>
@@ -10,7 +10,7 @@ meta: Jess Budd is front-end developer, web accessibility consultant and digital
 
   <hr>
 
-<h2>Current talks</h2>
+<h2>Talks</h2>
 
 
 ### Making React Apps Accessible: It's easier than you think
@@ -22,6 +22,14 @@ Javascript frameworks get a bad rap when it comes to accessibility. But is it th
 Follow me on a React journey through div soup, past the lost focus and under the unchanged titles. Find out: is there actually anything in React preventing us from building accessible web apps? You'll get a high level overview of fundamental issues, how to address them, and how to ensure your website is accessible and inclusive to all.
 
 
+### Designing & Developing Accessible Web Forms: Pitfalls to avoid
+
+<!-- <p class="duration">Duration: 25 and 55 minute versions</p> -->
+
+Every meaningful interaction on the web is achieved with a form of some kind - letting users sign up to your service, contact you via your website, buy your product, and so on. Although creating a form can be as simple as adding text boxes and radio buttons, ensuring your form meets accessibility guidelines and can be used by people with disabilities requires a little more thought.
+
+In this talk, we'll learn how to avoid common pitfalls when designing and developing forms for your website. You'll learn why you need labels, how to prevent users from making mistakes and how to help your users complete your form with ease.
+
 ### Live Life in Beta: What software development can teach us about life
 
 <!-- <p class="duration">Duration: 25 minutes</p> -->
@@ -31,14 +39,6 @@ What if we applied this same principle to our lives? What could we achieve and e
 
 "Beta" is about focusing on progress, not perfection. Now is the perfect time to embrace this. You'll learn how to iterate on aspects of our lives we're unhappy with, how to practice deploying early and often, and how to courageously pivot when user testing shows we've gone astray.
 
-### Designing & Developing Accessible Web Forms: Pitfalls to avoid
-
-<!-- <p class="duration">Duration: 25 and 55 minute versions</p> -->
-
-Every meaningful interaction on the web is achieved with a form of some kind - letting users sign up to your service, contact you via your website, buy your product, and so on. Although creating a form can be as simple as adding text boxes and radio buttons, ensuring your form meets accessibility guidelines and can be used by people with disabilities requires a little more thought.
-
-In this talk, we'll learn how to avoid common pitfalls when designing and developing forms for your website. You'll learn why you need labels, how to prevent users from making mistakes and how to help your users complete your form with ease.
-
 <hr>
 
 <h2>Bios for publication</h2>
@@ -47,25 +47,25 @@ In this talk, we'll learn how to avoid common pitfalls when designing and develo
 
 <h3 class="h4">Short:</h3>
 
-Jess Budd is a front-end developer, accessibility consultant and digital producer. She co-organises a user group for front-end developers, mentors women learning to code and has a love of technology and dogs.
+Jess Budd is an accessibility focused front-end engineer. She co-organises a community group for front-end developers, mentors women learning to code and has a love of technology and dogs.
 
 <h3 class="h4">Medium:</h3>
 
-Jess Budd is an experienced front-end developer and web accessibility consultant, working as a digital producer at Australia's second largest not-for-profit health fund. She is a co-organiser of a user group for front-end developers and is often found volunteering her time mentoring women learning to code. She’s known for her love of dogs, but is also crazy about UX design, technology and futurism.
+Jess Budd is an experienced front-end engineer and web accessibility advocate, working as a Senior Software Engineer at Hireup. She is a co-organiser of a community group for front-end developers and is often found volunteering her time her time for the benefit of the tech community. Her technical passions range from React, HTML and CSS to performance, online privacy and cyber security.
 
 <h3 class="h4">Long:</h3>
 
-Jess Budd is an experienced front-end developer and a strong advocate for web accessibility, ensuring her knowledge and experience as a  accessibility consultant is leveraged to make the web a better place for all people. She is a digital producer at Australia's second largest not-for-profit health fund [HBF](http://hbf.com.au) where she develops and implements digital initiatives.
+Jess Budd is an experienced front-end engineer and a strong advocate for web accessibility, ensuring her knowledge and background as a digital accessibility consultant is leveraged to make the web a better place for everyone. She is currently working as a Senior Software Engineer at Hireup.
 
-Jess consistently volunteers her time and energies for the benefit of the local community through various leadership, mentoring and volunteering roles. This includes mentoring primary and high school students, mentoring women learning to code and co-organising a Perth user group for front-end developers, [Fenders](https://fenders.co/). Jess actively promotes increased representation of women and diversity in technology by encouraging a supportive, collaborative and inclusive web community.
+Jess consistently volunteers her time and energies for the benefit of the local community through various leadership, mentoring and volunteering roles.  She is a co-organiser of a community group for front-end developers and is often found volunteering her time mentoring women learning to code. Her technical passions range from React, HTML and CSS to performance, online privacy and cyber security.
 
 
 <h2>Headshots</h2>
 
 Formal:
 
-<img class="headshot" src="/images/jess-budd-bio-lg-sq.jpg" alt="Jess Budd formal headshot">
-<!-- <img class="headshot" src="/images/jessbudd-bio-bw.jpg" alt="Jess Budd formal headshot black and white"> -->
+<img class="headshot" src="/images/jess-budd-bio-formal.jpg" alt="Jess Budd formal headshot">
+
 
 Informal:
 
