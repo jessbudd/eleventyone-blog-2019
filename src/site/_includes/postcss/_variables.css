@@ -2,7 +2,7 @@
 
   --font-brand: "Press Start 2P", Arial, Helvetica, sans-serif;
 
-  --headerHeight: 6.5rem;
+  --headerHeight: 12rem;
   --footerHeight: 19.5rem;
 
   --radius-20: 2px;
@@ -18,6 +18,7 @@
   --wide: 1100px;
 
   /* colours raw */
+  --purple-10: #e6e0f7;
   --purple-20: #cec2ef;
   --purple-30: #ab9dcf;
   --purple-40: #7963b3;
@@ -38,8 +39,8 @@
   --tertiary: var(--purple-20);
 
   /* colours assigned*/
-  --page-color: var(--neutral-0);
-  --heading-color: var(--purple-20);
+  --page-color: var(--purple-10);
+  --heading-color: var(--purple-80);
   --text-color-primary: var(--purple-100);
   --text-color-secondary: var(--neutral-0);
   --accent-color: var(--secondary);

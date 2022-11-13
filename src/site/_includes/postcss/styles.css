@@ -226,6 +226,9 @@ a:not([class]):hover {
 
 hr {
   margin-top: 60px;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: var(--accent-color);
 }
 ul,
 ol {
@@ -244,7 +247,8 @@ li {
 }
 
 .-page .nav {
-  padding-top: 3em;
+  margin: 0;
+  padding: 3em 0 0;
 
   li {
     display: inline;
@@ -720,7 +724,7 @@ a.archive__read-more:focus {
   padding: 0 5px;
 }
 footer .footer-nav a {
-  color: $accent-color;
+  color: var(--accent-color);
 }
 
 .latest-posts {
@@ -736,11 +740,13 @@ footer .footer-nav a {
 
   p {
     margin: 0.5rem 0;
+    font-size: 1.25rem;
   }
 
   time {
     color: var(--heading-color);
     font-size: 1rem;
+    font-style: italic;
   }
 
   @media (min-width: var(--mid)) {
