@@ -728,10 +728,38 @@ a.archive__read-more:focus {
   padding: 0 5px;
 }
 footer .footer-nav a {
-  color: mix($text-color, $accent-color, 80%);
+  color: $accent-color;
 }
-/* @media (max-width: 480px) {
-  .nav li:nth-of-type(3) {
-    display: none;
+
+.latest-posts {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 1rem;
   }
-} */
+
+  p {
+    margin: 0.5rem 0;
+  }
+
+  time {
+    color: $heading-color;
+    font-size: 1rem;
+  }
+
+  @media (min-width: $mid) {
+    li {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    time {
+      margin-left: 1rem;
+    }
+  }
+}
+
