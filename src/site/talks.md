@@ -1,7 +1,7 @@
 ---
 title: Speaking
 layout: layouts/base.njk
-subtitle: I enjoy sharing my knowledge about web accessibility and front-end development at a range of conferences and events.
+subtitle: A list of talks I've presented at tech conferences.
 meta: A list of Jess Budd's upcoming and past tech talks.
 ---
 
@@ -10,10 +10,7 @@ meta: A list of Jess Budd's upcoming and past tech talks.
 
 {%- if subtitle %}<p class="subtitle">{{ subtitle | safe }}</p>{% endif %}
 
-  <hr>
 <hr>
-
-<h2 id="pastTalks"> Previous Talks</h2>
 
 ### [DDDAdelaide](https://www.dddadelaide.com/) &nbsp; <a href="https://bit.ly/DDDA19" class="talk__link"> View Talk</a></p>
 
@@ -34,7 +31,7 @@ meta: A list of Jess Budd's upcoming and past tech talks.
 31 October 2019, Sydney Australia
 
 <figure>
-  <img src="/images/speakingLaracon2.jpg" alt="Jess Budd speaking at LarconAU">
+  <img src="/images/speakingLaracon3.jpg" alt="Jess Budd speaking at LarconAU" width="100%">
 
 <figcaption>Presenting at LaraconAU 2019. Photo credit: Giles Park</figcaption>
 </figure>
