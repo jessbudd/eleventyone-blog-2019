@@ -6,5 +6,9 @@
   {
     "text": "Blog",
     "href": "/blog"
+  },
+  {
+    "text": "Speaking",
+    "href": "/talks"
   }
 ]
