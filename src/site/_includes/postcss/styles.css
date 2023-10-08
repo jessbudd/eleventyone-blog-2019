@@ -36,6 +36,11 @@ body {
     font-size: 18px;
   }
 }
+.-blank.container {
+  max-width: 50rem;
+  padding: 0 15px;
+}
+
 .-page > .container {
   margin-left: auto;
   margin-right: auto;
