@@ -13,17 +13,17 @@ meta: Resources for conference talk 'Making single pages apps accessible'
 
 ## Web Content Accessibility Guidelines
 
-- [WCAG quick reference by the W3C](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1)
-- [Simple WCAG checklist from WebAim](https://webaim.org/standards/wcag/checklist)
-- [Accessibility tips for teams by the ABC (pdf)](https://about.abc.net.au/wp-content/uploads/2019/06/a11y_Tips4Teams.pdf)
-- [Understanding the Web Content Accessibility guidelines by Mozilla](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG)
+- [WCAG quick reference](https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1) - W3C
+- [Simple WCAG checklist](https://webaim.org/standards/wcag/checklist) - WebAim
+- [Accessibility tips for teams (pdf)](https://about.abc.net.au/wp-content/uploads/2019/06/a11y_Tips4Teams.pdf) - ABC
+- [Understanding the Web Content Accessibility guidelines](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG) - Mozilla
 
 
 ## Articles and reference
 
-- [Using coding AI assistants for a11y](https://github.blog/2023-10-09-prompting-github-copilot-chat-to-become-your-personal-ai-assistant-for-accessibility/)
-- [The most inaccessible site with perfect Lighthouse score](https://www.matuzo.at/blog/building-the-most-inaccessible-site-possible-with-a-perfect-lighthouse-score/)
-- [WebAim Screen Reader Survey Results](https://webaim.org/projects/screenreadersurvey9/#primary)
+- [Using coding AI assistants for a11y](https://github.blog/2023-10-09-prompting-github-copilot-chat-to-become-your-personal-ai-assistant-for-accessibility/) - Github
+- [The most inaccessible site with perfect Lighthouse score ](https://www.matuzo.at/blog/building-the-most-inaccessible-site-possible-with-a-perfect-lighthouse-score/) - Manuel Matuzović
+- [Screen Reader Survey Results #9](https://webaim.org/projects/screenreadersurvey9/#primary) - WebAim
 
 ## Framework specific documentation
 
@@ -39,7 +39,6 @@ meta: Resources for conference talk 'Making single pages apps accessible'
 
 ## Testing Guides
 
-- [Basics of screen reader testing](https://hireup.atlassian.net/wiki/x/TACZqQ)
 - [Automated testing overview](https://accessibility.huit.harvard.edu/auto-tools-testing)
 - [Manual testing overview](https://accessibility.huit.harvard.edu/manual-testing-accessibility)
 
