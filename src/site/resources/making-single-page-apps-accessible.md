@@ -24,6 +24,7 @@ meta: Resources for conference talk 'Making single pages apps accessible'
 - [Using coding AI assistants for a11y](https://github.blog/2023-10-09-prompting-github-copilot-chat-to-become-your-personal-ai-assistant-for-accessibility/) - Github
 - [The most inaccessible site with perfect Lighthouse score ](https://www.matuzo.at/blog/building-the-most-inaccessible-site-possible-with-a-perfect-lighthouse-score/) - Manuel Matuzović
 - [Screen Reader Survey Results #9](https://webaim.org/projects/screenreadersurvey9/#primary) - WebAim
+- [What we learned from user testing of accessible client-side routing techniques](https://www.gatsbyjs.com/blog/2019-07-11-user-testing-accessible-client-routing/) - Gatsby team
 
 ## Framework specific documentation
 
