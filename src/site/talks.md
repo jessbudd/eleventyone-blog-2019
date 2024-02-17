@@ -12,15 +12,21 @@ meta: A list of Jess Budd's upcoming and past tech talks.
 
 <hr>
 
+### <h3 class="talk__link">NDC Sydney</h3>
+
+<p class="talk__title">Making Single Page Apps Accessible: It's easier than you think</p>
+
+16 February 2024, Sydney Australia
+
 ### <h3 class="talk__link">Hireup ProductCon</h3>
 
 <p class="talk__title">Takeaways from accessibility testing with our community</p>
 
 22 November 2022, Sydney Australia
 
-### DDDAdelaide - <a href="https://bit.ly/DDDA19" class="talk__link"> View Talk</a></p>
+### DDDAdelaide
 
-<p class="talk__title">Making React Apps Accessible: It's easier than you think</p>
+<p class="talk__title">React and accessibility</p>
 
 23 November 2019, Adelaide Australia
 
