@@ -1,7 +1,7 @@
 ---
 title: Speaking
 layout: layouts/base.njk
-subtitle: This page contains a list of talks I've presented, with links to more information where relevant.
+subtitle: This page contains a list of talks I've presented with links to videos if available.
 meta: A list of Jess Budd's upcoming and past tech talks.
 ---
 
@@ -12,7 +12,7 @@ meta: A list of Jess Budd's upcoming and past tech talks.
 
 <hr>
 
-### <h3 class="talk__link">NDC Sydney</h3>
+### <h3 class="talk__link">NDC Sydney - <a href="https://bit.ly/ndcSydney2024" class="talk__link"> View Talk</a></h3>
 
 <p class="talk__title">Making Single Page Apps Accessible: It's easier than you think</p>
 
