@@ -1,6 +1,6 @@
 ---
 title: Automating setup of a new Macbook - for my future self
-date: 2024-03-09
+date: 2024-05-15
 meta: A shell script that uses Homebrew to set up a new fresh Macbook - for next time I need to do this and have forgotten.
 # img: https://jessbudd.com/images/featured/old-content-warning.jpg
 tags: [post, dev]
@@ -18,13 +18,13 @@ In 2024, you found this great [Medium article](https://medium.com/macoclock/auto
 
 ## The plan
 
-The shell script you're going to use is written in bash. It automates the process of installing Xcode CLI, Homebrew, some packages and cask apps, and setting zsh as the default shell. 
+The shell script you're going to use is written in bash. It automates the process of installing Xcode CLI, Homebrew, your go-to packages and cask apps, and setting zsh as the default shell. 
 
-It was also supposed to enable tap-to-click for your trackpad, just how you like it, but something changed in newer versions of macOS and the old methods no longer work. Sad face.
+It was also supposed to enable tap-to-click for your trackpad, just how you like it, but something changed in newer versions of macOS and the old methods no longer work. Booo, sad face.
 
 ### Create the shell script file
 
-Create a new shell script in the command line by entering `touch desktop/setup-script.sh`
+Create a new shell script in the command line by entering ```touch desktop/setup-script.sh```
 
 Open the file with the command `nano desktop/setup-script.sh`
 
@@ -96,7 +96,7 @@ echo "✅ Macbook setup successful! 💪"
 </code>
 </pre>
 
-### Run the Script
+### Run the script
 
 Open your terminal and `cd` to the desktop folder where your file is located.
 
