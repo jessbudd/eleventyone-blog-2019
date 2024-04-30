@@ -1,10 +1,9 @@
 ---
 title: Typeform input announcing [object object] in screen readers
 date: 2024-04-30
-meta: Rediscovering the joy of building small things in a world of big tasks. 
+meta: A solution to an unusual Typeform bug where form labels are announced incorrectly for screen readers. 
 tags: [post, dev, a11y]
 ---
-
 
 Typeform is an interactive form builder that enables marketing teams to create complex web forms, and in the past has courted controversy over their accessibility. Or, [lack of accessibility](https://a11y.reviews/#typeform) to be specific.
 
@@ -65,6 +64,8 @@ Mystery solved!
 The keyboard shortcut bolded the label text, and successfully broke the working form. Confirming conclusively that bolding form label text will result in screen readers announcing the input as "[object object]".
 
 The aria-label attribute is expecting to be passed a string. When it gets passed an html node instead, that object gets converted to a string. And in JavaScript, this becomes "[object object]". And screen readers prioritise announcing an aria-label over the text within the element.
+
+The fix was as simple as removing the bolding by highlighting the text and entering the keyboard shortcut again. 
 
 > As of 30 April, this bug is still present. Until Typefxorm fixes it, you can check out the behaviour on this [dummy Typeform](https://mazwz8p5bmj.typeform.com/to/xp4jURhT). 
 
