@@ -112,6 +112,7 @@ h5 {
   color: $heading-color;
   font-weight: 600;
   line-height: 1;
+  text-wrap: pretty;
   a,
   a:link,
   a:visited {
