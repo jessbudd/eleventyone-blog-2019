@@ -1,7 +1,7 @@
 ---
 title: Speaking
 layout: layouts/base.njk
-subtitle: This page contains a list of talks I've presented with links to videos if available.
+subtitle: This page contains a list of talks I've presented, with links to slides and videos, where available.
 meta: A list of Jess Budd's upcoming and past tech talks.
 ---
 
@@ -11,6 +11,12 @@ meta: A list of Jess Budd's upcoming and past tech talks.
 {%- if subtitle %}<p class="subtitle">{{ subtitle | safe }}</p>{% endif %}
 
 <hr>
+
+### <h3 class="talk__link">Web Directions Code, Melbourne</h3>
+
+<p class="talk__title">Making Single Page Apps Accessible</p>
+
+20 June 2024, Sydney Australia
 
 ### <h3 class="talk__link">NDC Sydney - <a href="https://bit.ly/ndcSydney2024" class="talk__link"> View Talk</a></h3>
 
@@ -24,7 +30,7 @@ meta: A list of Jess Budd's upcoming and past tech talks.
 
 22 November 2022, Sydney Australia
 
-### DDDAdelaide
+### DDD Adelaide
 
 <p class="talk__title">React and accessibility</p>
 
