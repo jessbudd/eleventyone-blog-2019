@@ -15,24 +15,24 @@ This would prevent a screen reader user from knowing what each radio button opti
 
 <figure>
 <img src="/images/posts/typeform2.png" alt=""/>
-<figcaption>Typeform announcing "[object object]" for a radio button in VoiceOver in macOS</figcaption>
+<figcaption>Typeform announcing "[object object]" for a radio button in VoiceOver on macOS</figcaption>
 </figure>
 
-Form labels are foundational functionality for a company that claims WCAG compliance to get wrong - so I was fairly confident there must be something unusual happening. That we must have triggered some unusual bug. 
+Announcing form labels correctly is _fundamental_ functionality for a company that claims WCAG compliance to get wrong - so I was fairly confident there must be something unusual happening. That we must have triggered some unusual bug. 
 
 Googling the issue didn’t return any useful results, and we weren't getting a timely response Typeform, so we were on our own. 
 
-My first thought was that Iframes are tricky beasts, perhaps it was to do with the iframe embed? No, we had previously tested embedded forms with no issues. 
+My first thought was that Iframes are tricky beasts, so perhaps it was to do with the iframe embed? No, we had previously tested embedded forms with no issues. 
 
-I went with my golden first rule of troubleshooting: _Reproduce the behaviour_. 
+I kicked off investigations with my first golden rule of troubleshooting; _reproduce the behaviour_. 
 
 I created a new form with just one question and it worked fine, as expected. 
 
-I added as many multiple-choice options as the broken from had. Still fine.
+I added as many multiple-choice options as the broken from had. Still working.
 
 I added conditional logic like the broken form had. _Still_ fine.
 
-I brought up the original broken form and my new working dummy form up on the screen to compare the accessibility tree side by side. 
+I brought the original broken form and my new working dummy form up on the screen to compare the accessibility trees side by side. 
 
 <figure>
 <img src="/images/posts/typeform4.png" alt=""/>
@@ -43,7 +43,7 @@ The obvious difference was the aria-label. The working form had the same value a
 
 Aria-labels are not manually set in Typeform, so the field must be being passed a value it wasn’t expecting.
 
-I then moved on to compare the HTML. That's when I noticed the form that wasn't working had `<strong>` tags and bolded text.
+I then moved to comparing the HTML. That's when I noticed the form that wasn't working had `<strong>` tags and bolded text.
 
 <figure>
    <img src="/images/posts/typeform5.png" alt=""/>
