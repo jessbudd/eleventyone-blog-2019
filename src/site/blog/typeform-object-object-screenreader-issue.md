@@ -5,7 +5,7 @@ meta: A solution to an unusual Typeform bug where form labels are announced inco
 tags: [post, dev, a11y]
 ---
 
-Typeform is an interactive form builder that enables marketing teams to create complex web forms, and in the past has courted controversy over their accessibility. Or, [lack of accessibility](https://a11y.reviews/#typeform) to be specific.
+Typeform is an interactive form builder that enables marketing teams to create complex web forms, and in the past has courted controversy over their accessibility. Or, [lack of accessibility](https://a11y.reviews/#typeform) as it were.
 
 In recent years, Typeform has made significant improvements and is formally striving to comply with the Web Content Accessibility Guidelines (WCAG). When I personally completed accessibility testing to assess their suitablity to use on our marketing website, there were only minor issues found.
 
