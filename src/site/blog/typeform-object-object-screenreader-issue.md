@@ -67,7 +67,7 @@ The aria-label attribute is expecting to be passed a string. When it gets passed
 
 The fix was as simple as removing the bolding by highlighting the text and entering the keyboard shortcut again. 
 
-> As of 30 April, this bug is still present. Until Typefxorm fixes it, you can check out the behaviour on this [dummy Typeform](https://mazwz8p5bmj.typeform.com/to/xp4jURhT). 
+> As of 30 April, this bug is still present. Until Typeform fixes it, you can check out the behaviour on this [dummy Typeform](https://mazwz8p5bmj.typeform.com/to/xp4jURhT). 
 
 <img src="/images/posts/typeform1.png" alt=""/>
 
