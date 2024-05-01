@@ -13,6 +13,11 @@ Imagine my disappointment when a draft form created for an important product lau
 
 This would prevent a screen reader user from knowing what each radio button option was, and completely prevent them from completing the form.
 
+<figure>
+<img src="/images/posts/typeform2.png" alt=""/>
+<figcaption>Typeform announcing "[object object]" for a radio button in VoiceOver in macOS</figcaption>
+</figure>
+
 Form labels are foundational functionality for a company that claims WCAG compliance to get wrong - so I was fairly confident there must be something unusual happening. That we must have triggered some unusual bug. 
 
 Googling the issue didn’t return any useful results, and we weren't getting a timely response Typeform, so we were on our own. 
