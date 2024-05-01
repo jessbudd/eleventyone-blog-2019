@@ -120,6 +120,14 @@ h5 {
   }
 }
 h1 {
+  /* TODO: replace breakpoint sizing with fluid typography when postCSS is removed. Clamp is not currently supported */
+    /* generator https://fluidtypography.com/#app-get-started */
+  /* font-size: clamp(2.125rem, 3.464vw + 2.229rem, 3.5rem); */
+  /* line-height: clamp(2.688rem, 3.349vw + 3.821rem, 4.5rem); */
+  font-size: 2.5em;
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  line-height: 1;
   font-size: 2.5em;
   margin-top: 0.4em;
   margin-bottom: 0.2em;
@@ -127,12 +135,12 @@ h1 {
 }
 @media (min-width: $desk) {
   h1 {
-    font-size: 3.5em;
+    font-size: 3em;
   }
 }
 @media (min-width: $wide) {
   h1 {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 }
 h2,
