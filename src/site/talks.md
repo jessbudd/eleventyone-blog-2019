@@ -10,13 +10,18 @@ meta: A list of Jess Budd's upcoming and past tech talks.
 
 {%- if subtitle %}<p class="subtitle">{{ subtitle | safe }}</p>{% endif %}
 
-<hr>
+<hr style="margin: 2rem 0;">
+
+[View Speaker Profile](https://sessionize.com/jbudd)
+
+
+
 
 ### <h3 class="talk__link">Web Directions Code, Melbourne</h3>
 
 <p class="talk__title">Making Single Page Apps Accessible</p>
 
-20 June 2024, Sydney Australia
+20 June 2024, Melbourne Australia
 
 ### <h3 class="talk__link">NDC Sydney - <a href="https://bit.ly/ndcSydney2024" class="talk__link"> View Talk</a></h3>
 
