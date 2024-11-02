@@ -15,9 +15,13 @@ meta: A list of Jess Budd's upcoming and past tech talks.
 [View Speaker Profile](https://sessionize.com/jbudd)
 
 
+### <h3 class="talk__link">DDD, Perth</h3>
 
+<p class="talk__title">Your new CSS BFFs</p>
 
-### <h3 class="talk__link">Web Directions Code, Melbourne</h3>
+16 November 2024, Perth Australia
+
+### <h3 class="talk__link">Web Directions Code, Melbourne - <a href="https://conffab.com/presentation/making-single-page-apps-accessible-its-easier-than-you-think/?gl=XdqOmNKIAHcf" class="talk__link"> View Talk</a></h3>
 
 <p class="talk__title">Making Single Page Apps Accessible</p>
 
