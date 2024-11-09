@@ -15,6 +15,13 @@ meta: Resources for conference talk 'Your new CSS BFFs'
 
 - [The New CSS Media Query Range Syntax](https://css-tricks.com/the-new-css-media-query-range-syntax/) - CSS Tricks
 - [New syntax for range media queries](https://web.dev/articles/media-query-range-syntax) - Web.dev
+- [PostCSS plugin](https://github.com/postcss/postcss-media-minmax)
+
+## Native nesting
+
+- [Using CSS nesting](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting) - MDN
+- [CSS nesting](https://developer.chrome.com/docs/css-ui/css-nesting) - Chrome for developers
+- [PostCSS plugin](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-nesting)
 
 ## Container Queries
 
