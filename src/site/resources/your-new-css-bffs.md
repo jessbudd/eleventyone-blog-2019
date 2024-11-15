@@ -11,6 +11,8 @@ meta: Resources for conference talk 'Your new CSS BFFs'
 <h1>{{title}}</h1>
 <p class="subtitle">{{subtitle}}</p>
 
+[Talk slides](https://noti.st/jessbudd/inmStX/your-new-css-bffs)
+
 ## Media Query Syntax
 
 - [The New CSS Media Query Range Syntax](https://css-tricks.com/the-new-css-media-query-range-syntax/) - CSS Tricks
@@ -27,7 +29,6 @@ meta: Resources for conference talk 'Your new CSS BFFs'
 
 - [Container Queries: a Quick Start Guide](https://www.oddbird.net/2021/04/05/containerqueries/) - Odd Bird
 - [CSS Container Queries](https://css-tricks.com/css-container-queries/) - CSS Tricks
-- [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries](https://wave.webaim.org/extension/) - MDN
 - [3 New & Nifty CSS Things](https://www.youtube.com/watch?v=DxJXvTFiWSI&ab_channel=WesBos) - Wes Bos (video)
 
 ## :Has pseudo-selector

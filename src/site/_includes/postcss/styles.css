@@ -229,6 +229,7 @@ a:visited {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: mix($text-color, $accent-color, 20%);
+  word-wrap: break-word;
 }
 a:hover,
 a:focus {
